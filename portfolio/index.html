@@ -5,10 +5,41 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/style.css" rel="stylesheet">
-    <title>Portfolio</title>
+    <title>Porfolio</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold p-4">Welcome to My Portfolio</h1>
-    <p class="mt-4">This is a showcase of my work.</p>
+    <main class="h-screen overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-[60%_40%] ml-[2vw] mt-[2vh] mb-[10vh] h-max text-2xl">
+          <p>PORFOLIO DE DISEÑO</p>
+          <p>ARNAU JALÓN</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-[60%_40%] ml-[2vw] mt-[2vh] mb-[28vh] h-max text-2xl">
+        <p class="col-start-2">Diseñador de Producto</p>
+      </div>
+      <div class="grid grid-cols-1 text-base md:grid-cols-[60%_40%] ml-[2vw] mt-[2vh] mb-[20vh] h-max">
+        <p class=" justify-self-end mr-[15vh]">Contacto</p>
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col">
+            <p>Instagram:</p>
+            <p>Mail:</p>
+            <p>Teléfono:</p>
+          </div>
+          <div class="flex flex-col">
+            <p>@arnaujalon</p>
+            <p>arnau.jalon@gmail.com</p>
+            <p>+34 688 84 10 09</p>
+          </div>
+      </div>
+      
+      <hr class="fixed bottom-12 border-t border-gray-300 my-4 w-[95%] md:[95%]">
+      <nav class="fixed left-0 bottom-4 flex justify-evenly w-full">
+        <a href="./index.html" class="text-base text-gray-500 hover:text-gray-700 transition delay-50 duration-200 ease-in">CONTACTO</a>
+        <a href="./about.html" class="text-base text-gray-300 hover:text-gray-700 transition delay-50 duration-200 ease-in">SOBRE MI</a>
+        <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition delay-50 duration-200 ease-in">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
+        <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition delay-50 duration-200 ease-in">SK-016<span class="block text-xs">Moda, materiales y tendencias.</span></a>
+        <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition delay-50 duration-200 ease-in">OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span></a>
+        <a href="#" class="text-base text-gray-300 hover:text-gray-700 transition delay-50 duration-200 ease-in">OTROS PROYECTOS</a>
+      </nav>
+    </main>
   </body>
 </html>
