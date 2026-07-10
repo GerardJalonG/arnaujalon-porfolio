@@ -11,3 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* En pantallas muy anchas (ultrawide) el layout no se estira:
+   se centra con un ancho máximo tipo editorial. */
+main {
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
