@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet">
+    <title>Arnau Jalón — Otros proyectos</title>
+  </head>
+  <body class="antialiased">
+    <button id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu-overlay" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
+    <div id="menu-overlay" aria-label="Navegación principal" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
+      <a href="./index.html" class="text-xl text-gray-400">CONTACTO</a>
+      <a href="./about.html" class="text-xl text-gray-400">SOBRE MI</a>
+      <a href="./qisu.html" class="text-xl text-gray-400">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
+      <a href="./sk016.html" class="text-xl text-gray-400">SK-016<span class="block text-xs">Moda, materiales y tendencias.</span></a>
+      <a href="./outdoor.html" class="text-xl text-gray-400">OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span></a>
+      <a href="./otros.html" class="text-xl text-gray-700 cursor-default">OTROS PROYECTOS</a>
+    </div>
+
+    <main class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+
+      <header class="grid grid-cols-[1fr_auto] px-4 md:mx-[2vw] mt-[2vh] mb-[4vh] text-xl md:text-2xl">
+        <h1>OTROS PROYECTOS</h1>
+        <p class="hidden md:block text-base mr-[10%]">7</p>
+      </header>
+
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 px-4 md:mx-[2vw] mb-8">
+
+        <article>
+          <img src="./src/img/otros-escora.webp" alt="Módulos de madera Escora apilados" class="w-full aspect-[4/3] object-cover" />
+          <p class="text-xs italic mt-1">#ProductDesign #Furniture</p>
+          <h2 class="text-base md:text-xl mt-6">ESCORA</h2>
+          <p class="text-xs mt-4">Proyecto desarrollado en Elisava.</p>
+          <p class="text-xs md:text-justify mt-4">Un proyecto de mobiliario inspirado en el mar Mediterráneo y su historia.</p>
+          <p class="text-xs md:text-justify mt-2">Como resultado, se desarrolló un conjunto versátil de tres módulos cúbicos de madera contrachapada que funcionan como zapatero. Su estructura fue inspirada en el mundo de la pesca e imita las costillas del esqueleto estructural de un barco pesquero.</p>
+        </article>
+
+        <article>
+          <img src="./src/img/otros-cordoba.webp" alt="Vajilla de gres Córdoba con comida" class="w-full aspect-[4/3] object-cover" />
+          <p class="text-xs italic mt-1">#FoodDesign #Pottery</p>
+          <h2 class="text-base md:text-xl mt-6">CÓRDOBA</h2>
+          <p class="text-xs mt-4">Proyecto desarrollado en Elisava.</p>
+          <p class="text-xs md:text-justify mt-4">Un proyecto personal que une las disciplinas del Diseño de Producto y el Food Design.</p>
+          <p class="text-xs md:text-justify mt-2">Una vajilla artesanal compuesta por seis piezas de gres con esmaltado blanco brillante, y un utensilio de madera. Les acompaña una narrativa gastronómica que se remonta a los orígenes de esta ciudad.</p>
+        </article>
+
+        <article>
+          <img src="./src/img/otros-rayling.webp" alt="Axonometría del espacio The Rayling System" class="w-full aspect-[4/3] object-cover" />
+          <p class="text-xs italic mt-1">#ServiceDesign #Space</p>
+          <h2 class="text-base md:text-xl mt-6">THE RAYLING SYSTEM</h2>
+          <p class="text-xs mt-4">En colaboración con Elisava y el Ajuntament de Barcelona</p>
+          <p class="text-xs md:text-justify mt-4">Se propuso un plan de reforma de los espacios públicos interiores y exteriores del barrio de Vilapicina y la Torre Llobeta, junto con una red de actividades y servicios que se propuso para disminuir algunos de los problemas de movilidad que enfrenta la gente mayor a diario.</p>
+          <p class="text-xs md:text-justify mt-2">Le acompaña un sistema modular de raíles diseñados como elementos divisores de espacios, que cubrían necesidades de carácter ortopédico.</p>
+        </article>
+
+        <article>
+          <img src="./src/img/otros-politics.webp" alt="Cartel amarillo de Politics of (In)visibility en la calle" class="w-full aspect-[4/3] object-cover" />
+          <p class="text-xs italic mt-1">#GraphicDesign #Activism</p>
+          <h2 class="text-base md:text-xl mt-6">POLITICS OF (IN)VISIBILITY</h2>
+          <p class="text-xs mt-4">En colaboración con Elisava e Ideal, centro de artes digitales.</p>
+          <p class="text-xs md:text-justify mt-4">En conjunto con otros 5 diseñadores, realizamos diferentes carteles que fueron parte de una exposición en la vía pública, recogida posteriormente en el centro de artes digitales "Ideal" en Barcelona.</p>
+          <p class="text-xs md:text-justify mt-2">Todos con la intención de criticar y denunciar los espacios que habían sido alterados, para así, evitar que puedan ser ocupados por personas sin hogar.</p>
+        </article>
+
+      </section>
+
+      <div class="px-4 md:mx-[2vw] mb-4 flex justify-start">
+        <a href="./outdoor.html" aria-label="Página anterior" class="w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
+      </div>
+
+      <footer class="hidden md:block w-full">
+        <hr class="border-t border-gray-300 w-[95%] mx-auto" />
+        <nav class="flex justify-evenly py-3">
+          <a href="./index.html" class="text-base text-gray-300 hover:text-gray-700 transition">CONTACTO</a>
+          <a href="./about.html" class="text-base text-gray-300 hover:text-gray-700 transition">SOBRE MI</a>
+          <a href="./qisu.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+            QISU BRAND<span class="block text-xs">Accesorios para perros.</span>
+          </a>
+          <a href="./sk016.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+            SK-016<span class="block text-xs">Moda, materiales y tendencias.</span>
+          </a>
+          <a href="./outdoor.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+            OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span>
+          </a>
+          <a href="./otros.html" class="text-base text-gray-500 cursor-default">OTROS PROYECTOS</a>
+        </nav>
+      </footer>
+
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

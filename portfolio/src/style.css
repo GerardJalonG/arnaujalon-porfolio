@@ -1,27 +1,30 @@
 @import "tailwindcss";
 
-/* Preferencia: usar Helvetica del sistema, con fallbacks. */
-@font-face {
-  font-family: 'HelveticaLocal';
-  src: url('/public/fonts/Helvetica.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Reset mínimo para evitar separaciones inesperadas */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
   font-family: var(--font-sans);
+  background-color: #fff;
+  color: #111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  border-radius: 0.375rem;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* En pantallas muy anchas (ultrawide) el layout no se estira:
+   se centra con un ancho máximo tipo editorial. */
+main {
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
 }

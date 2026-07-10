@@ -2,80 +2,77 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/style.css" rel="stylesheet">
-    <title>SK-016</title>
+    <title>Arnau Jalón — Outdoor Workplace</title>
   </head>
   <body class="antialiased">
-  <main class="grid min-h-screen grid-rows-[auto_1fr_auto]">
-      
-    <header class="grid grid-cols-1 md:grid-cols-[30%_70%] mx-[2vw] mt-[2vh] mb-[4vh] text-2xl">
-    <p>OUTDOOR WORKPLACE</p>
-    <p class="text-base justify-self-end mr-[10%] col-start-3">6</p>
-    </header>
-
-    <section class="h-full min-h-0 flex flex-col">
-            <section class="text-justify flex-none flex flex-col ml-[3vw] mb-[1vh]  md:w-[50%] md:ml-[40%] md:col-start-2">
-                <div class="text-2xl">
-                <p>Outdoor Workplace, en colaboración con Kettal, fue el resultado de mi trabajo de investigación de fin de grado en Elisava.</p>
-                </div>
-
-                <div class="text-base mt-[1rem]">
-                <p>Outdoor Workplace, Oficinas al Aire Libre, apuesta por adaptar de manera cómoda y versátil los 
-                    espacios exteriores a entornos destinados al trabajo.
-                </p>
-                </div>
-
-                <div class="text-xs mt-[1rem] gap-y-6 flex flex-col">
-                <p>La propuesta hacia Kettal surgió por querer incorporar a su actual catálogo una nueva colección diseñada específicamente para satisfacer
-                    las necesidades que puedan surgir al trabajar en espacios al aire libre. Quise focalizar el incio de esta investigación en un contexto actual,
-                    que refleja cambios conesecuentes de la pandemia. Concretamente, se exploraron las nuevas formas que hemos adoptado a la hora de trabajar,
-                    cambios a los que me tuve que enfrentar mientras cursaba mis primeros años del grado universitario.
-                </p>
-                </div>
-    </section>
-
-    <div class="mx-[2vw] mt-4 mb-[2vh] h-full">
-      <!-- columns: 2fr, 2fr, 1fr (half), 2fr -->
-      <div class="grid grid-cols-1 md:grid-cols-[2fr_2fr_1fr_2fr] h-full gap-x-3 items-stretch">
-        <!-- 1 -->
-        <img src="./src/img/slide1.jpg"
-          alt="detalle 1"
-          class="block w-full h-full object-cover rounded-lg shadow md:col-start-1 md:col-end-2" />
-
-        <!-- 2 -->
-        <img src="./src/img/slide2.jpg"
-          alt="detalle 2"
-          class="block w-full h-full object-cover rounded-lg shadow md:col-start-2 md:col-end-3" />
-                
-        <div class="hidden md:block"></div>
-
-        <!-- 3 (salta la columna espaciadora) -->
-        <img src="./src/img/slide3.jpg"
-          alt="detalle 3"
-          class="block w-full h-full object-cover rounded-lg shadow md:col-start-4 md:col-end-5" />
-      </div>
+    <button id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu-overlay" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
+    <div id="menu-overlay" aria-label="Navegación principal" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
+      <a href="./index.html" class="text-xl text-gray-400">CONTACTO</a>
+      <a href="./about.html" class="text-xl text-gray-400">SOBRE MI</a>
+      <a href="./qisu.html" class="text-xl text-gray-400">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
+      <a href="./sk016.html" class="text-xl text-gray-400">SK-016<span class="block text-xs">Moda, materiales y tendencias.</span></a>
+      <a href="./outdoor.html" class="text-xl text-gray-700 cursor-default">OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span></a>
+      <a href="./otros.html" class="text-xl text-gray-400">OTROS PROYECTOS</a>
     </div>
-    </section>
 
-      <footer class="w-full">
+    <main class="grid min-h-screen md:h-screen grid-rows-[auto_1fr_auto]">
+
+      <header class="grid grid-cols-[1fr_auto] px-4 md:mx-[2vw] mt-[2vh] mb-[4vh] text-xl md:text-2xl">
+        <h1>OUTDOOR WORKPLACE</h1>
+        <p class="hidden md:block text-base mr-[10%]">6</p>
+      </header>
+
+      <section class="h-full min-h-0 flex flex-col">
+        <section class="md:text-justify flex-none flex flex-col px-4 md:px-0 md:w-[50%] md:ml-[40%] mb-[1vh]">
+          <div class="text-xl md:text-2xl">
+            <p>Outdoor Workplace, en colaboración con Kettal, fue el resultado de mi trabajo de investigación de fin de grado en Elisava.</p>
+          </div>
+
+          <div class="text-base mt-4">
+            <p>Outdoor Workplace, Oficinas al Aire Libre, apuesta por adaptar de manera cómoda y versátil los espacios exteriores a entornos destinados al trabajo.</p>
+          </div>
+
+          <div class="text-xs mt-4 gap-y-4 flex flex-col">
+            <p>La propuesta hacia Kettal surgió por querer incorporar a su actual catálogo una nueva colección diseñada específicamente para satisfacer las necesidades que puedan surgir al trabajar en espacios al aire libre. Quise focalizar el inicio de esta investigación en un contexto actual, que refleja cambios consecuentes de la pandemia. Concretamente, se exploraron las nuevas formas que hemos adoptado a la hora de trabajar, cambios a los que me tuve que enfrentar mientras cursaba mis primeros años del grado universitario.</p>
+          </div>
+        </section>
+
+        <div class="px-4 md:mx-[2vw] mt-4 mb-[2vh] flex-1 min-h-0">
+          <div class="grid grid-cols-1 md:grid-cols-[2fr_2fr_2fr] md:grid-rows-[minmax(0,1fr)] h-full gap-4 md:gap-x-3 items-stretch">
+            <img src="./src/img/outdoor-1.webp" alt="Detalle de mesa y silla Outdoor Workplace" class="w-full aspect-[4/3] md:aspect-auto md:h-full md:min-h-0 object-cover" />
+            <img src="./src/img/outdoor-2.webp" alt="Pérgola de trabajo Outdoor Workplace, vista frontal" class="w-full aspect-[4/3] md:aspect-auto md:h-full md:min-h-0 object-cover" />
+            <img src="./src/img/outdoor-3.webp" alt="Módulos Outdoor Workplace en sala de exposición" class="w-full aspect-[4/3] md:aspect-auto md:h-full md:min-h-0 object-cover" />
+          </div>
+        </div>
+
+        <div class="px-4 md:mx-[2vw] mb-4 flex justify-between">
+          <a href="./sk016.html" aria-label="Página anterior" class="w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
+          <a href="./otros.html" aria-label="Siguiente página" class="w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&rarr;</a>
+        </div>
+      </section>
+
+      <footer class="hidden md:block w-full">
         <hr class="border-t border-gray-300 w-[95%] mx-auto" />
         <nav class="flex justify-evenly py-3">
           <a href="./index.html" class="text-base text-gray-300 hover:text-gray-700 transition">CONTACTO</a>
           <a href="./about.html" class="text-base text-gray-300 hover:text-gray-700 transition">SOBRE MI</a>
-          <a href="./qisuprojects.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+          <a href="./qisu.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
             QISU BRAND<span class="block text-xs">Accesorios para perros.</span>
           </a>
           <a href="./sk016.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
             SK-016<span class="block text-xs">Moda, materiales y tendencias.</span>
           </a>
-          <a href="#" class="text-base text-center text-gray-500 cursor-default">
+          <a href="./outdoor.html" class="text-base text-center text-gray-500 cursor-default">
             OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span>
           </a>
-          <a href="#" class="text-base text-gray-300 hover:text-gray-700 transition">OTROS PROYECTOS</a>
+          <a href="./otros.html" class="text-base text-gray-300 hover:text-gray-700 transition">OTROS PROYECTOS</a>
         </nav>
       </footer>
 
     </main>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

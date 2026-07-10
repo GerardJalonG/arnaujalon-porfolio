@@ -2,70 +2,76 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/style.css" rel="stylesheet">
-    <title>Landing</title>
+    <title>Arnau Jalón — Qisu Brand</title>
   </head>
   <body class="antialiased">
-    <main class="grid h-screen grid-rows-[auto_1fr_auto]">
-      
-      <header class="grid grid-cols-1 md:grid-cols-[30%_70%] mx-[2vw] mt-[2vh] mb-[4vh] text-2xl">
-        <p>QISU BRAND</p>
-        <p class="text-base justify-self-end mr-[10%] col-start-3">3</p>
+    <button id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu-overlay" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
+    <div id="menu-overlay" aria-label="Navegación principal" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
+      <a href="./index.html" class="text-xl text-gray-400">CONTACTO</a>
+      <a href="./about.html" class="text-xl text-gray-400">SOBRE MI</a>
+      <a href="./qisu.html" class="text-xl text-gray-700 cursor-default">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
+      <a href="./sk016.html" class="text-xl text-gray-400">SK-016<span class="block text-xs">Moda, materiales y tendencias.</span></a>
+      <a href="./outdoor.html" class="text-xl text-gray-400">OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span></a>
+      <a href="./otros.html" class="text-xl text-gray-400">OTROS PROYECTOS</a>
+    </div>
+
+    <main class="grid min-h-screen md:h-screen grid-rows-[auto_1fr_auto]">
+
+      <header class="grid grid-cols-[1fr_auto] px-4 md:mx-[2vw] mt-[2vh] mb-[4vh] text-xl md:text-2xl">
+        <h1>QISU BRAND</h1>
+        <p class="hidden md:block text-base mr-[10%]">3</p>
       </header>
 
-      <section class="grid grid-cols-[30%_50%] grid-rows-[1fr_auto] mb-[2vh] text-justify">
+      <section class="grid grid-cols-1 md:grid-cols-[30%_50%] md:grid-rows-[1fr_auto] px-4 md:px-0 mb-[2vh] gap-y-6">
 
-        <div class="col-start-1 row-start-1 row-end-3 flex items-center pt-[5vh] mx-[2vw]">
-        <img src="./src/img/image.webp"
-                alt="Foto Arnau"
-                class="w-100 h-auto object-cover" />
+        <div class="md:col-start-1 md:row-start-1 md:row-end-3 flex items-center md:pt-[5vh] md:mx-[2vw]">
+          <img src="./src/img/qisu-hero.webp"
+               alt="Modelo con orejeras y perro teckel con jersey Qisu"
+               class="w-full max-w-md h-auto object-cover" />
         </div>
 
-        <section class="text-justify md:col-start-2 md:row-start-1 md:row-end-3 flex flex-col ml-[3vw]">
-          <div class="md:col-start-2 text-2xl">
-          <p>Diseñador de producto en Qisu Brand. Moda sostenible y </p>
-          <p>accesorios para perros y humanos.</p>
+        <section class="md:text-justify md:col-start-2 md:row-start-1 md:row-end-3 flex flex-col md:ml-[3vw]">
+          <div class="text-xl md:text-2xl">
+            <p>Diseñador de producto en Qisu Brand. Moda sostenible y accesorios para perros y humanos.</p>
           </div>
 
-          <div class="md:col-start-2 text-base mt-[1rem]">
-            <p>En Qisu, he desarrollado proyectos de producto, textil, ilustración, identidad gráfica, packaging, y diseño
-             de stands y espacios para ferias, eventos y tiendas. He liderado la dirección creativa de shootings, 
-             la selección de modelos y la producción de vestuario y escenografía.</p>
-            </p>
+          <div class="text-base mt-4">
+            <p>En Qisu, he desarrollado proyectos de producto, textil, ilustración, identidad gráfica, packaging, y diseño de stands y espacios para ferias, eventos y tiendas. He liderado la dirección creativa de shootings, la selección de modelos y la producción de vestuario y escenografía.</p>
           </div>
 
-          <div class="md:col-start-2 text-xs mt-[1rem]">
-            <p>Aquí he aprendido a diseñar desde la creatividad y la estrategia, a hacer análisis de 
-              mercado, y a liderar el equipo de diseño de una marca emergente. A hacer el seguimiento de proveedores, planificar los calendarios,
-              calcular el impacto y la viabilidad de las campañas, y prever los beneficios esperados de cada lanzamiento junto al resto de departamentos.</p>
+          <div class="text-xs mt-4">
+            <p>Aquí he aprendido a diseñar desde la creatividad y la estrategia, a hacer análisis de mercado, y a liderar el equipo de diseño de una marca emergente. A hacer el seguimiento de proveedores, planificar los calendarios, calcular el impacto y la viabilidad de las campañas, y prever los beneficios esperados de cada lanzamiento junto al resto de departamentos.</p>
           </div>
 
-          <div class="flex md:items-end mt-auto">
-            <a href="./qisuprojects.html" class="col-start-3 row-start-2 row-end-3 w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&rarr;</a>
+          <div class="flex md:items-end justify-end md:justify-start mt-6 md:mt-auto">
+            <a href="./qisuprojects.html" aria-label="Ver proyectos de Qisu" class="w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&rarr;</a>
           </div>
         </section>
 
       </section>
 
-      <footer class="w-full">
+      <footer class="hidden md:block w-full">
         <hr class="border-t border-gray-300 w-[95%] mx-auto" />
         <nav class="flex justify-evenly py-3">
           <a href="./index.html" class="text-base text-gray-300 hover:text-gray-700 transition">CONTACTO</a>
           <a href="./about.html" class="text-base text-gray-300 hover:text-gray-700 transition">SOBRE MI</a>
-          <a href="./qisuprojects.html" class="text-base text-center text-gray-500 hover:text-gray-700 transition">
+          <a href="./qisu.html" class="text-base text-center text-gray-500 cursor-default">
             QISU BRAND<span class="block text-xs">Accesorios para perros.</span>
           </a>
-          <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+          <a href="./sk016.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
             SK-016<span class="block text-xs">Moda, materiales y tendencias.</span>
           </a>
-          <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+          <a href="./outdoor.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
             OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span>
           </a>
-          <a href="#" class="text-base text-gray-300 hover:text-gray-700 transition">OTROS PROYECTOS</a>
+          <a href="./otros.html" class="text-base text-gray-300 hover:text-gray-700 transition">OTROS PROYECTOS</a>
         </nav>
       </footer>
 
     </main>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

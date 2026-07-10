@@ -2,70 +2,127 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/style.css" rel="stylesheet">
-    <title>Landing</title>
+    <title>Arnau Jalón — Qisu Brand, proyectos</title>
   </head>
   <body class="antialiased">
-    <main class="grid h-screen grid-rows-[auto_1fr_auto]">
-      
-      <header class="grid grid-cols-1 md:grid-cols-[30%_70%] mx-[2vw] mt-[2vh] mb-[7vh] text-2xl">
-        <p>QISU BRAND</p>
-        <p class="text-base justify-self-end mr-[10%] col-start-3">3</p>
+    <button id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu-overlay" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
+    <div id="menu-overlay" aria-label="Navegación principal" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
+      <a href="./index.html" class="text-xl text-gray-400">CONTACTO</a>
+      <a href="./about.html" class="text-xl text-gray-400">SOBRE MI</a>
+      <a href="./qisu.html" class="text-xl text-gray-700 cursor-default">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
+      <a href="./sk016.html" class="text-xl text-gray-400">SK-016<span class="block text-xs">Moda, materiales y tendencias.</span></a>
+      <a href="./outdoor.html" class="text-xl text-gray-400">OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span></a>
+      <a href="./otros.html" class="text-xl text-gray-400">OTROS PROYECTOS</a>
+    </div>
+
+    <main class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+
+      <header class="grid grid-cols-[1fr_auto] px-4 md:mx-[2vw] mt-[2vh] mb-[4vh] text-xl md:text-2xl">
+        <h1>QISU BRAND, selección de proyectos</h1>
+        <p class="hidden md:block text-base mr-[10%]">4</p>
       </header>
 
-      <section class="grid grid-cols-[30%_50%] grid-rows-[1fr_auto] mb-[2vh] text-justify">
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-10 px-4 md:mx-[2vw] mb-8">
 
-        <div class="col-start-1 row-start-1 row-end-3 flex items-center pt-[5vh] mx-[2vw]">
-        <img src="./src/img/image.webp"
-                alt="Foto Arnau"
-                class="w-100 h-auto object-cover" />
-        </div>
-
-        <section class="text-justify md:col-start-2 md:row-start-1 md:row-end-3 flex flex-col">
-          <div class="md:col-start-2 text-2xl">
-          <p>Diseñador de producto en Qisu Brand. Moda sostenible y </p>
-          <p>accesorios para perros y humanos.</p>
+        <article class="grid grid-cols-1 sm:grid-cols-[48%_1fr] gap-x-4 gap-y-3">
+          <div>
+            <img src="./src/img/qisu-vest-harness.webp" alt="Teckel con Vest Harness lila" class="w-full aspect-square rounded-md object-cover" />
+            <p class="text-xs italic mt-1">#DogWear</p>
           </div>
-
-          <div class="md:col-start-2 text-base mt-[1rem]">
-            <p>En Qisu, he desarrollado proyectos de producto, textil, ilustración, identidad gráfica, packaging, y diseño
-             de stands y espacios para ferias, eventos y tiendas. He liderado la dirección creativa de shootings, 
-             la selección de modelos y la producción de vestuario y escenografía.</p>
-            </p>
+          <div>
+            <h2 class="text-base md:text-xl">VEST HARNESS</h2>
+            <p class="text-xs md:text-justify mt-4">Un arnés convertible en chaqueta, innovador por su diseño y pensado ergonómicamente para los perros más pequeños.</p>
           </div>
+        </article>
 
-          <div class="md:col-start-2 text-xs mt-[1rem]">
-            <p>Aquí he aprendido a diseñar desde la creatividad y la estrategia, a hacer análisis de 
-              mercado, y a liderar el equipo de diseño de una marca emergente. A hacer el seguimiento de proveedores, planificar los calendarios,
-              calcular el impacto y la viabilidad de las campañas, y prever los beneficios esperados de cada lanzamiento junto al resto de departamentos.</p>
+        <article class="grid grid-cols-1 sm:grid-cols-[48%_1fr] gap-x-4 gap-y-3">
+          <div>
+            <img src="./src/img/qisu-dmatnm.webp" alt="Caniche junto a sudadera con ilustración DMATNM" class="w-full aspect-square rounded-md object-cover" />
+            <p class="text-xs italic mt-1">#Fashion #Illustration</p>
           </div>
+          <div>
+            <h2 class="text-base md:text-xl">*DMATNM</h2>
+            <p class="text-xs md:text-justify mt-4">Ilustraciones para los diseños de las nuevas sudaderas personalizables <span class="italic">"Dog Moms Are The New MILFS"</span>, y <span class="italic">"Dog Dads Are The New DILFS"</span>.</p>
+          </div>
+        </article>
 
-          <div class="flex md:items-end mt-auto">
-            <a href="./qisu.html" class="col-start-3 row-start-2 row-end-3 w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
+        <article class="grid grid-cols-1 sm:grid-cols-[48%_1fr] gap-x-4 gap-y-3">
+          <div>
+            <img src="./src/img/qisu-air-canvas.webp" alt="Air Canvas Harness sobre fondo rosa" class="w-full aspect-square rounded-md object-cover" />
+            <p class="text-xs italic mt-1">#DogWear</p>
           </div>
-        </section>
+          <div>
+            <h2 class="text-base md:text-xl">AIR CANVAS HARNESS</h2>
+            <p class="text-xs md:text-justify mt-4">Un arnés ligero, parte de la colección <span class="italic">"Summer Collection"</span> pensado para el verano.</p>
+            <p class="text-xs md:text-justify mt-2">Le acompaña un collar, una correa y un porta-bolsas a juego, una cama portátil de viaje, toalla y helados de peluche.</p>
+          </div>
+        </article>
+
+        <article class="grid grid-cols-1 sm:grid-cols-[48%_1fr] gap-x-4 gap-y-3">
+          <div>
+            <img src="./src/img/qisu-walkies-bag.webp" alt="Persona llevando los bolsos Walkies Bag" class="w-full aspect-square rounded-md object-cover" />
+            <p class="text-xs italic mt-1">#Fashion #Accessories</p>
+          </div>
+          <div>
+            <h2 class="text-base md:text-xl">WALKIES BAG</h2>
+            <p class="text-xs md:text-justify mt-4">Bolso con tres posiciones, pensado para solucionar las necesidades del paseo con tu perro.</p>
+            <p class="text-xs md:text-justify mt-2">Convertible en riñonera y mochila, incluye una serie de complementos, como un bol portátil y un porta-premios a juego.</p>
+          </div>
+        </article>
+
+        <article class="grid grid-cols-1 sm:grid-cols-[48%_1fr] gap-x-4 gap-y-3">
+          <div>
+            <img src="./src/img/qisu-tags.webp" alt="Perro con gorro y chapa identificativa Qisu Tags" class="w-full aspect-square rounded-md object-cover" />
+            <p class="text-xs italic mt-1">#Accessories</p>
+          </div>
+          <div>
+            <h2 class="text-base md:text-xl">QISU TAGS</h2>
+            <p class="text-xs md:text-justify mt-4">Chapas identificativas para perros. La chapa simula perros disfrazados con gorritos, y por eso, en el rodaje, disfrazamos a los perros a conjunto de la chapa.</p>
+            <p class="text-xs md:text-justify mt-2">La funda de silicona no solo protege la chapa de golpes y ralladuras, sino que además las hace coleccionables e intercambiables.</p>
+          </div>
+        </article>
+
+        <article class="grid grid-cols-1 sm:grid-cols-[48%_1fr] gap-x-4 gap-y-3">
+          <div>
+            <img src="./src/img/qisu-woof-n-wash.webp" alt="Botella portátil Woof n Wash en una mano" class="w-full aspect-square rounded-md object-cover" />
+            <p class="text-xs italic mt-1">#Accessories</p>
+          </div>
+          <div>
+            <h2 class="text-base md:text-xl">WOOF N WASH</h2>
+            <p class="text-xs md:text-justify mt-4">Un imprescindible para los paseos, que complementa muchas de las colecciones de la marca.</p>
+            <p class="text-xs md:text-justify mt-2">Una botella portátil para llevar agua y limpiar los pipis en la calle.</p>
+          </div>
+        </article>
 
       </section>
 
-      <footer class="w-full">
+      <div class="px-4 md:mx-[2vw] mb-4 flex justify-between">
+        <a href="./qisu.html" aria-label="Página anterior" class="w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
+        <a href="./sk016.html" aria-label="Siguiente página" class="w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&rarr;</a>
+      </div>
+
+      <footer class="hidden md:block w-full">
         <hr class="border-t border-gray-300 w-[95%] mx-auto" />
         <nav class="flex justify-evenly py-3">
           <a href="./index.html" class="text-base text-gray-300 hover:text-gray-700 transition">CONTACTO</a>
           <a href="./about.html" class="text-base text-gray-300 hover:text-gray-700 transition">SOBRE MI</a>
-          <a href="./qisu.html" class="text-base text-center text-gray-500 hover:text-gray-700 transition">
+          <a href="./qisu.html" class="text-base text-center text-gray-500 cursor-default">
             QISU BRAND<span class="block text-xs">Accesorios para perros.</span>
           </a>
-          <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+          <a href="./sk016.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
             SK-016<span class="block text-xs">Moda, materiales y tendencias.</span>
           </a>
-          <a href="#" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
+          <a href="./outdoor.html" class="text-base text-center text-gray-300 hover:text-gray-700 transition">
             OUTDOOR WORKPLACE<span class="block text-xs">Mobiliario.</span>
           </a>
-          <a href="#" class="text-base text-gray-300 hover:text-gray-700 transition">OTROS PROYECTOS</a>
+          <a href="./otros.html" class="text-base text-gray-300 hover:text-gray-700 transition">OTROS PROYECTOS</a>
         </nav>
       </footer>
 
     </main>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
