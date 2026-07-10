@@ -8,8 +8,8 @@
     <title>Arnau Jalón — Outdoor Workplace</title>
   </head>
   <body class="antialiased">
-    <button id="menu-btn" aria-label="Abrir menú" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
-    <div id="menu-overlay" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
+    <button id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu-overlay" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
+    <div id="menu-overlay" aria-label="Navegación principal" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
       <a href="./index.html" class="text-xl text-gray-400">CONTACTO</a>
       <a href="./about.html" class="text-xl text-gray-400">SOBRE MI</a>
       <a href="./qisu.html" class="text-xl text-gray-400">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
@@ -21,12 +21,12 @@
     <main class="grid min-h-screen md:h-screen grid-rows-[auto_1fr_auto]">
 
       <header class="grid grid-cols-[1fr_auto] px-4 md:mx-[2vw] mt-[2vh] mb-[4vh] text-xl md:text-2xl">
-        <p>OUTDOOR WORKPLACE</p>
+        <h1>OUTDOOR WORKPLACE</h1>
         <p class="hidden md:block text-base mr-[10%]">6</p>
       </header>
 
       <section class="h-full min-h-0 flex flex-col">
-        <section class="text-justify flex-none flex flex-col px-4 md:px-0 md:w-[50%] md:ml-[40%] mb-[1vh]">
+        <section class="md:text-justify flex-none flex flex-col px-4 md:px-0 md:w-[50%] md:ml-[40%] mb-[1vh]">
           <div class="text-xl md:text-2xl">
             <p>Outdoor Workplace, en colaboración con Kettal, fue el resultado de mi trabajo de investigación de fin de grado en Elisava.</p>
           </div>

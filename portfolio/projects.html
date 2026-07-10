@@ -8,8 +8,8 @@
     <title>Arnau Jalón — Experiencia</title>
   </head>
   <body class="antialiased">
-    <button id="menu-btn" aria-label="Abrir menú" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
-    <div id="menu-overlay" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
+    <button id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu-overlay" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 text-2xl leading-none">☰</button>
+    <div id="menu-overlay" aria-label="Navegación principal" class="hidden md:hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center gap-8 text-center">
       <a href="./index.html" class="text-xl text-gray-400">CONTACTO</a>
       <a href="./about.html" class="text-xl text-gray-700 cursor-default">SOBRE MI</a>
       <a href="./qisu.html" class="text-xl text-gray-400">QISU BRAND<span class="block text-xs">Accesorios para perros.</span></a>
@@ -20,33 +20,33 @@
 
     <main class="grid min-h-screen md:h-screen grid-rows-[auto_1fr_auto]">
 
-      <header class="grid grid-cols-1 md:grid-cols-[20%_60%_20%] px-4 md:mx-[2vw] mt-[2vh] text-xl md:text-2xl gap-y-4">
-        <p>SOBRE MI</p>
+      <header class="grid grid-cols-1 md:grid-cols-[19%_76%_5%] px-4 md:px-0 md:ml-[2vw] mt-[2vh] text-xl md:text-2xl gap-y-4">
+        <h1>SOBRE MI</h1>
         <p>Experiencia en las áreas de accesorios, mascotas, decoración y mobiliario. Conocimientos en moda, tejidos, y exploración de nuevos materiales y tendencias.</p>
         <p class="hidden md:block text-base justify-self-end mr-[10%]">2</p>
       </header>
 
-      <section class="grid grid-cols-1 md:grid-cols-[20%_70%_10%] px-4 md:px-0 md:ml-[2vw] mt-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 md:col-start-2 gap-4 md:gap-2">
+      <section class="grid grid-cols-1 md:grid-cols-[19%_75%_6%] px-4 md:px-0 md:ml-[2vw] mt-6 md:mt-[5.5vh]">
+        <div class="grid grid-cols-1 md:grid-cols-3 md:col-start-2 gap-4 md:gap-1">
           <figure>
-            <img src="./src/img/home-dog.webp" alt="Perro con arnés Qisu Brand" class="w-full aspect-[4/5] object-cover" />
+            <img src="./src/img/home-dog.webp" alt="Perro con arnés Qisu Brand" class="w-full aspect-[4/5] md:aspect-[7/10] object-cover" />
             <figcaption class="text-xs italic mt-1">#DogWear #Accessories</figcaption>
           </figure>
           <figure>
-            <img src="./src/img/home-fashion.webp" alt="Prenda experimental SK-016" class="w-full aspect-[4/5] object-cover" />
+            <img src="./src/img/home-fashion.webp" alt="Prenda experimental SK-016" class="w-full aspect-[4/5] md:aspect-[7/10] object-cover" />
             <figcaption class="text-xs italic mt-1">#Fashion #Materiality</figcaption>
           </figure>
           <figure>
-            <img src="./src/img/home-furniture.webp" alt="Mobiliario Outdoor Workplace para Kettal" class="w-full aspect-[4/5] object-cover" />
+            <img src="./src/img/home-furniture.webp" alt="Mobiliario Outdoor Workplace para Kettal" class="w-full aspect-[4/5] md:aspect-[7/10] object-cover" />
             <figcaption class="text-xs italic mt-1">#ProductDesign #Furniture</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="grid grid-cols-1 md:grid-cols-4 px-4 md:mx-[2vw] mt-8 md:mt-[5vh] mb-6 text-base text-justify gap-y-6">
+      <section class="grid grid-cols-1 md:grid-cols-4 px-4 md:mx-[2vw] mt-8 md:mt-[5.5vh] mb-6 md:mb-1 text-base md:text-justify gap-y-6">
         <div>
           <p class="text-sm">Experiencia destacada:</p>
-          <a href="./about.html" aria-label="Página anterior" class="inline-flex mt-4 w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
+          <a href="./about.html" aria-label="Página anterior" class="hidden md:inline-flex mt-4 w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
         </div>
 
         <div>
@@ -61,6 +61,7 @@
           <p>2.3. <a href="./outdoor.html" class="hover:text-gray-500 transition">OUTDOOR WORKPLACE</a> <span class="text-xs">2022-2023.</span></p>
           <p class="text-xs mt-4 md:mx-8">Proyecto de investigación. Exploración de nuevas tipologías de mobiliario y propuesta para el actual catálogo de Kettal.</p>
         </div>
+        <a href="./about.html" aria-label="Página anterior" class="md:hidden inline-flex mt-4 w-fit h-fit text-3xl text-gray-500 hover:text-gray-700 transition">&larr;</a>
       </section>
 
       <footer class="hidden md:block w-full">

@@ -12,6 +12,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
 /* En pantallas muy anchas (ultrawide) el layout no se estira:
    se centra con un ancho máximo tipo editorial. */
 main {
