@@ -18,7 +18,7 @@
       <a href="./otros.html" class="text-xl text-gray-400">OTROS PROYECTOS</a>
     </div>
 
-    <main class="grid min-h-screen md:h-screen grid-rows-[auto_1fr_auto]">
+    <main class="grid min-h-screen md:h-screen grid-rows-[auto_minmax(0,1fr)_auto_auto]">
 
       <header class="grid grid-cols-1 md:grid-cols-[19%_76%_5%] px-4 md:px-0 md:ml-[2vw] mt-[2vh] text-xl md:text-2xl gap-y-4">
         <h1>SOBRE MI</h1>
@@ -26,18 +26,18 @@
         <p class="hidden md:block text-base justify-self-end mr-[10%]">2</p>
       </header>
 
-      <section class="grid grid-cols-1 md:grid-cols-[19%_75%_6%] px-4 md:px-0 md:ml-[2vw] mt-6 md:mt-[5.5vh]">
-        <div class="grid grid-cols-1 md:grid-cols-3 md:col-start-2 gap-4 md:gap-1">
-          <figure>
-            <img src="./src/img/home-dog.webp" alt="Perro con arnés Qisu Brand" class="w-full aspect-[4/5] md:aspect-[7/10] object-cover" />
+      <section class="grid grid-cols-1 md:grid-cols-[19%_75%_6%] px-4 md:px-0 md:ml-[2vw] mt-6 md:mt-[5.5vh] md:min-h-0">
+        <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-[minmax(0,1fr)] md:col-start-2 gap-4 md:gap-1 md:h-full md:min-h-0">
+          <figure class="md:flex md:flex-col md:min-h-0">
+            <img src="./src/img/home-dog.webp" alt="Perro con arnés Qisu Brand" class="w-full aspect-[4/5] md:aspect-auto md:flex-1 md:min-h-0 object-cover" />
             <figcaption class="text-xs italic mt-1">#DogWear #Accessories</figcaption>
           </figure>
-          <figure>
-            <img src="./src/img/home-fashion.webp" alt="Prenda experimental SK-016" class="w-full aspect-[4/5] md:aspect-[7/10] object-cover" />
+          <figure class="md:flex md:flex-col md:min-h-0">
+            <img src="./src/img/home-fashion.webp" alt="Prenda experimental SK-016" class="w-full aspect-[4/5] md:aspect-auto md:flex-1 md:min-h-0 object-cover" />
             <figcaption class="text-xs italic mt-1">#Fashion #Materiality</figcaption>
           </figure>
-          <figure>
-            <img src="./src/img/home-furniture.webp" alt="Mobiliario Outdoor Workplace para Kettal" class="w-full aspect-[4/5] md:aspect-[7/10] object-cover" />
+          <figure class="md:flex md:flex-col md:min-h-0">
+            <img src="./src/img/home-furniture.webp" alt="Mobiliario Outdoor Workplace para Kettal" class="w-full aspect-[4/5] md:aspect-auto md:flex-1 md:min-h-0 object-cover" />
             <figcaption class="text-xs italic mt-1">#ProductDesign #Furniture</figcaption>
           </figure>
         </div>

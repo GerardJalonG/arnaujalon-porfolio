@@ -4,6 +4,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [tailwindcss()],
+  server: {
+    port: process.env.PORT ? Number(process.env.PORT) : 5173,
+  },
   build: {
     rollupOptions: {
       input: {
