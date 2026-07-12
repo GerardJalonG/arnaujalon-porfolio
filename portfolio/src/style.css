@@ -28,3 +28,81 @@ main {
   max-width: 1920px;
   margin-inline: auto;
 }
+
+/* En pantallas 2K+ la tipografía escala para mantener la proporción
+   editorial; el resto del layout usa rem y crece con ella. */
+@media (min-width: 2200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/*!
+ * Hamburgers — variante "slider"
+ * @author Jonathan Suh @jonsuh — https://github.com/jonsuh/hamburgers (MIT)
+ * Adaptado: barras de 32x3px con 6px de separación y color #111.
+ */
+/* Sin display propio: así el md:hidden de Tailwind lo oculta en desktop. */
+.hamburger {
+  padding: 8px;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger-box {
+  width: 32px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger-inner {
+  display: block;
+  top: 1.5px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 32px;
+  height: 3px;
+  background-color: #111;
+  border-radius: 3px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger--slider .hamburger-inner::before {
+  top: 9px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+.hamburger--slider .hamburger-inner::after {
+  top: 18px;
+}
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.hamburger--slider.is-active .hamburger-inner::before {
+  transform: rotate(-45deg) translate3d(-4.57px, -6px, 0);
+  opacity: 0;
+}
+.hamburger--slider.is-active .hamburger-inner::after {
+  transform: translate3d(0, -18px, 0) rotate(-90deg);
+}
