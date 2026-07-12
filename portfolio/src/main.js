@@ -5,7 +5,7 @@ if (btn && overlay) {
   const setMenuOpen = (isOpen) => {
     overlay.classList.toggle('flex', isOpen);
     overlay.classList.toggle('hidden', !isOpen);
-    btn.textContent = isOpen ? '✕' : '☰';
+    btn.classList.toggle('is-active', isOpen);
     btn.setAttribute('aria-expanded', String(isOpen));
     btn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
     document.body.classList.toggle('overflow-hidden', isOpen);
